@@ -1,0 +1,464 @@
+# depslib dependency file v1.0
+1765632901 source:c:\users\hryca\onedrive\pulpit\programming\lab07\testy.cpp
+	<iostream>
+	<cassert>
+	"Samochod.h"
+	"KatalogSamochodow.h"
+
+1766167898 c:\users\hryca\onedrive\pulpit\programming\lab07\samochod.h
+	<iostream>
+	<string>
+	<vector>
+
+1766321666 source:c:\users\hryca\onedrive\pulpit\programming\lab07\samochod.cpp
+	"Samochod.h"
+
+1766245555 source:c:\users\hryca\onedrive\pulpit\programming\lab07\katalogsamochodow.cpp
+	"KatalogSamochodow.h"
+	"Samochod.h"
+	<iostream>
+
+1766163956 c:\users\hryca\onedrive\pulpit\programming\lab07\katalogsamochodow.h
+	<iostream>
+	<string>
+	<vector>
+	"Samochod.h"
+
+1766147975 source:c:\users\hryca\onedrive\pulpit\programming\lab07\kalendarz.cpp
+	"Kalendarz.h"
+	"WpisWKalendarzu.h"
+	<iostream>
+
+1766082399 c:\users\hryca\onedrive\pulpit\programming\lab07\kalendarz.h
+	<iostream>
+	<string>
+	<vector>
+	"WpisWKalendarzu.h"
+
+1766335676 c:\users\hryca\onedrive\pulpit\programming\lab07\wpiswkalendarzu.h
+	<iostream>
+	<string>
+	<vector>
+	"TypEkspoloatacji.h"
+
+1765113068 c:\users\hryca\onedrive\pulpit\programming\lab07\typekspoloatacji.h
+	<iostream>
+
+1766335083 source:c:\users\hryca\onedrive\pulpit\programming\lab07\wpiswkalendarzu.cpp
+	"WpisWKalendarzu.h"
+	"TypEkspoloatacji.h"
+	<iostream>
+
+1766152964 source:c:\users\hryca\onedrive\pulpit\programming\lab07\testfunkcjonalny.cpp
+	<iostream>
+	<string>
+	"Kalendarz.h"
+	"WpisWKalendarzu.h"
+	"Administrator.h"
+
+1766168212 c:\users\hryca\onedrive\pulpit\programming\lab07\administrator.h
+	<iostream>
+	<string>
+	<vector>
+	"Uzytkownik.h"
+	"TypEkspoloatacji.h"
+
+1766168156 c:\users\hryca\onedrive\pulpit\programming\lab07\uzytkownik.h
+	<iostream>
+	<string>
+
+1766324590 source:c:\users\hryca\onedrive\pulpit\programming\lab07\uzytkownik.cpp
+	"Uzytkownik.h"
+
+1766354646 source:c:\users\hryca\onedrive\pulpit\programming\lab07\administrator.cpp
+	"Administrator.h"
+	"ListaRezerwacji.h"
+	"KatalogSamochodow.h"
+	"Dokumentacja.h"
+	"Uzytkownicy.h"
+	"Kalendarz.h"
+	"Samochod.h"
+	"Rezerwacja.h"
+	"WpisWKalendarzu.h"
+	"TypEkspoloatacji.h"
+	<iostream>
+
+1766318638 c:\users\hryca\onedrive\pulpit\programming\lab07\listarezerwacji.h
+	"Rezerwacja.h"
+	"Samochod.h"
+	<iostream>
+	<string>
+	<vector>
+
+1766166616 c:\users\hryca\onedrive\pulpit\programming\lab07\rezerwacja.h
+	"Samochod.h"
+	"Uzytkownik.h"
+	<iostream>
+	<string>
+	<vector>
+
+1766163407 c:\users\hryca\onedrive\pulpit\programming\lab07\dokumentacja.h
+	<iostream>
+	<string>
+	<vector>
+	"Dokument.h"
+
+1766326433 c:\users\hryca\onedrive\pulpit\programming\lab07\dokument.h
+	<iostream>
+	<string>
+	<vector>
+
+1766336779 c:\users\hryca\onedrive\pulpit\programming\lab07\uzytkownicy.h
+	"Uzytkownik.h"
+	<iostream>
+	<string>
+	<vector>
+
+1766167219 source:c:\users\hryca\onedrive\pulpit\programming\lab07\ocenastanu.cpp
+	"OcenaStanu.h"
+	"Dokumentacja.h"
+	"KatalogSamochodow.h"
+	"Samochod.h"
+	"Dokument.h"
+	<iostream>
+
+1765129642 c:\users\hryca\onedrive\pulpit\programming\lab07\ocenastanu.h
+	<iostream>
+	<string>
+	<vector>
+
+1766322371 source:c:\users\hryca\onedrive\pulpit\programming\lab07\listarezerwacji.cpp
+	"ListaRezerwacji.h"
+	"Rezerwacja.h"
+	<iostream>
+
+1766336117 source:c:\users\hryca\onedrive\pulpit\programming\lab07\dokumentacja.cpp
+	"Dokumentacja.h"
+	"Dokument.h"
+	<iostream>
+
+1766355136 source:c:\users\hryca\onedrive\pulpit\programming\lab07\historiauzycia.cpp
+	"HistoriaUzycia.h"
+	"Rezerwacja.h"
+	"Samochod.h"
+	"Uzytkownik.h"
+	<iostream>
+
+1766354053 c:\users\hryca\onedrive\pulpit\programming\lab07\historiauzycia.h
+	<iostream>
+	<string>
+	<vector>
+
+1766326982 source:c:\users\hryca\onedrive\pulpit\programming\lab07\dokument.cpp
+	"Dokument.h"
+	<iostream>
+
+1766336599 source:c:\users\hryca\onedrive\pulpit\programming\lab07\uzytkownicy.cpp
+	"Uzytkownicy.h"
+	"Uzytkownik.h"
+	<iostream>
+
+1766324621 source:c:\users\hryca\onedrive\pulpit\programming\lab07\rezerwacja.cpp
+	"Rezerwacja.h"
+	"Samochod.h"
+	"Pracownik.h"
+	<iostream>
+
+1766337529 c:\users\hryca\onedrive\pulpit\programming\lab07\pracownik.h
+	"Uzytkownik.h"
+	<iostream>
+	<string>
+	<vector>
+
+1766338374 source:c:\users\hryca\onedrive\pulpit\programming\lab07\pracownik.cpp
+	"Pracownik.h"
+	"ListaRezerwacji.h"
+	"KatalogSamochodow.h"
+	"OcenaStanu.h"
+	"Dokumentacja.h"
+	"Samochod.h"
+	"Protocol.h"
+	"Rezerwacja.h"
+	<iostream>
+
+1766354870 source:c:\users\hryca\onedrive\pulpit\programming\lab07\interfaceprovider.cpp
+	"InterfaceProvider.h"
+	"Kalendarz.h"
+	"WpisWKalendarzu.h"
+	"Administrator.h"
+	"Pracownik.h"
+	"Uzytkownik.h"
+	"ListaRezerwacji.h"
+	"Rezerwacja.h"
+	"KatalogSamochodow.h"
+	"Samochod.h"
+	"Uzytkownicy.h"
+	"TypEkspoloatacji.h"
+	<vector>
+	<string>
+	<iostream>
+	<limits>
+
+1766335884 c:\users\hryca\onedrive\pulpit\programming\lab07\interfaceprovider.h
+	"Kalendarz.h"
+	"Administrator.h"
+	"Pracownik.h"
+	"ListaRezerwacji.h"
+	"KatalogSamochodow.h"
+	"Uzytkownicy.h"
+	<string>
+	<iostream>
+
+1766353772 source:c:\users\hryca\onedrive\pulpit\programming\lab07\main.cpp
+	<iostream>
+	"InterfaceProvider.h"
+	"Kalendarz.h"
+	"KatalogSamochodow.h"
+	"Uzytkownicy.h"
+	"ListaRezerwacji.h"
+	"Administrator.h"
+	"Pracownik.h"
+	"Samochod.h"
+
+1766262506 source:c:\users\hryca\onedrive\pulpit\programming\lab07\testfunk.cpp
+	<iostream>
+	<sstream>
+	<cassert>
+	<string>
+	"Administrator.h"
+	"Pracownik.h"
+	"Kalendarz.h"
+	"WpisWKalendarzu.h"
+	"InterfaceProvider.h"
+	"KatalogSamochodow.h"
+	"ListaRezerwacji.h"
+	"Uzytkownicy.h"
+
+1766336303 source:c:\users\hryca\onedrive\pulpit\programming\lab07\protocol.cpp
+	"Protocol.h"
+	<iostream>
+
+1766335912 c:\users\hryca\onedrive\pulpit\programming\lab07\protocol.h
+	<iostream>
+	<string>
+	<vector>
+	"Dokument.h"
+
+1766326982 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\dokument.cpp
+	"Dokument.h"
+	<iostream>
+
+1766326433 c:\users\hryca\onedrive\pulpit\programming\aplikacja\dokument.h
+	<iostream>
+	<string>
+	<vector>
+
+1766336117 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\dokumentacja.cpp
+	"Dokumentacja.h"
+	"Dokument.h"
+	<iostream>
+
+1766163407 c:\users\hryca\onedrive\pulpit\programming\aplikacja\dokumentacja.h
+	<iostream>
+	<string>
+	<vector>
+	"Dokument.h"
+
+1766355136 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\historiauzycia.cpp
+	"HistoriaUzycia.h"
+	"Rezerwacja.h"
+	"Samochod.h"
+	"Uzytkownik.h"
+	<iostream>
+
+1766354053 c:\users\hryca\onedrive\pulpit\programming\aplikacja\historiauzycia.h
+	<iostream>
+	<string>
+	<vector>
+
+1766166616 c:\users\hryca\onedrive\pulpit\programming\aplikacja\rezerwacja.h
+	"Samochod.h"
+	"Uzytkownik.h"
+	<iostream>
+	<string>
+	<vector>
+
+1766167898 c:\users\hryca\onedrive\pulpit\programming\aplikacja\samochod.h
+	<iostream>
+	<string>
+	<vector>
+
+1766168156 c:\users\hryca\onedrive\pulpit\programming\aplikacja\uzytkownik.h
+	<iostream>
+	<string>
+
+1766354870 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\interfaceprovider.cpp
+	"InterfaceProvider.h"
+	"Kalendarz.h"
+	"WpisWKalendarzu.h"
+	"Administrator.h"
+	"Pracownik.h"
+	"Uzytkownik.h"
+	"ListaRezerwacji.h"
+	"Rezerwacja.h"
+	"KatalogSamochodow.h"
+	"Samochod.h"
+	"Uzytkownicy.h"
+	"TypEkspoloatacji.h"
+	<vector>
+	<string>
+	<iostream>
+	<limits>
+
+1766335884 c:\users\hryca\onedrive\pulpit\programming\aplikacja\interfaceprovider.h
+	"Kalendarz.h"
+	"Administrator.h"
+	"Pracownik.h"
+	"ListaRezerwacji.h"
+	"KatalogSamochodow.h"
+	"Uzytkownicy.h"
+	<string>
+	<iostream>
+
+1766082399 c:\users\hryca\onedrive\pulpit\programming\aplikacja\kalendarz.h
+	<iostream>
+	<string>
+	<vector>
+	"WpisWKalendarzu.h"
+
+1766335676 c:\users\hryca\onedrive\pulpit\programming\aplikacja\wpiswkalendarzu.h
+	<iostream>
+	<string>
+	<vector>
+	"TypEkspoloatacji.h"
+
+1765113068 c:\users\hryca\onedrive\pulpit\programming\aplikacja\typekspoloatacji.h
+	<iostream>
+
+1766168212 c:\users\hryca\onedrive\pulpit\programming\aplikacja\administrator.h
+	<iostream>
+	<string>
+	<vector>
+	"Uzytkownik.h"
+	"TypEkspoloatacji.h"
+
+1766337529 c:\users\hryca\onedrive\pulpit\programming\aplikacja\pracownik.h
+	"Uzytkownik.h"
+	<iostream>
+	<string>
+	<vector>
+
+1766318638 c:\users\hryca\onedrive\pulpit\programming\aplikacja\listarezerwacji.h
+	"Rezerwacja.h"
+	"Samochod.h"
+	<iostream>
+	<string>
+	<vector>
+
+1766163956 c:\users\hryca\onedrive\pulpit\programming\aplikacja\katalogsamochodow.h
+	<iostream>
+	<string>
+	<vector>
+	"Samochod.h"
+
+1766336779 c:\users\hryca\onedrive\pulpit\programming\aplikacja\uzytkownicy.h
+	"Uzytkownik.h"
+	<iostream>
+	<string>
+	<vector>
+
+1766147975 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\kalendarz.cpp
+	"Kalendarz.h"
+	"WpisWKalendarzu.h"
+	<iostream>
+
+1766245555 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\katalogsamochodow.cpp
+	"KatalogSamochodow.h"
+	"Samochod.h"
+	<iostream>
+
+1766322371 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\listarezerwacji.cpp
+	"ListaRezerwacji.h"
+	"Rezerwacja.h"
+	<iostream>
+
+1766353772 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\main.cpp
+	<iostream>
+	"InterfaceProvider.h"
+	"Kalendarz.h"
+	"KatalogSamochodow.h"
+	"Uzytkownicy.h"
+	"ListaRezerwacji.h"
+	"Administrator.h"
+	"Pracownik.h"
+	"Samochod.h"
+
+1766167219 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\ocenastanu.cpp
+	"OcenaStanu.h"
+	"Dokumentacja.h"
+	"KatalogSamochodow.h"
+	"Samochod.h"
+	"Dokument.h"
+	<iostream>
+
+1765129642 c:\users\hryca\onedrive\pulpit\programming\aplikacja\ocenastanu.h
+	<iostream>
+	<string>
+	<vector>
+
+1766338374 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\pracownik.cpp
+	"Pracownik.h"
+	"ListaRezerwacji.h"
+	"KatalogSamochodow.h"
+	"OcenaStanu.h"
+	"Dokumentacja.h"
+	"Samochod.h"
+	"Protocol.h"
+	"Rezerwacja.h"
+	<iostream>
+
+1766335912 c:\users\hryca\onedrive\pulpit\programming\aplikacja\protocol.h
+	<iostream>
+	<string>
+	<vector>
+	"Dokument.h"
+
+1766336303 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\protocol.cpp
+	"Protocol.h"
+	<iostream>
+
+1766324621 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\rezerwacja.cpp
+	"Rezerwacja.h"
+	"Samochod.h"
+	"Pracownik.h"
+	<iostream>
+
+1766321666 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\samochod.cpp
+	"Samochod.h"
+
+1766336599 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\uzytkownicy.cpp
+	"Uzytkownicy.h"
+	"Uzytkownik.h"
+	<iostream>
+
+1766324590 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\uzytkownik.cpp
+	"Uzytkownik.h"
+
+1766335083 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\wpiswkalendarzu.cpp
+	"WpisWKalendarzu.h"
+	"TypEkspoloatacji.h"
+	<iostream>
+
+1773531004 source:c:\users\hryca\onedrive\pulpit\programming\aplikacja\administrator.cpp
+	"Administrator.h"
+	"ListaRezerwacji.h"
+	"KatalogSamochodow.h"
+	"Dokumentacja.h"
+	"Uzytkownicy.h"
+	"Kalendarz.h"
+	"Samochod.h"
+	"Rezerwacja.h"
+	"WpisWKalendarzu.h"
+	"TypEkspoloatacji.h"
+	<iostream>
+

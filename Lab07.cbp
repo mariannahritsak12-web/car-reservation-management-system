@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Lab07" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Lab07" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Lab07" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Administrator.cpp" />
+		<Unit filename="Administrator.h" />
+		<Unit filename="Dokument.cpp" />
+		<Unit filename="Dokument.h" />
+		<Unit filename="Dokumentacja.cpp" />
+		<Unit filename="Dokumentacja.h" />
+		<Unit filename="HistoriaUzycia.cpp" />
+		<Unit filename="HistoriaUzycia.h" />
+		<Unit filename="InterfaceProvider.cpp" />
+		<Unit filename="InterfaceProvider.h" />
+		<Unit filename="Kalendarz.cpp" />
+		<Unit filename="Kalendarz.h" />
+		<Unit filename="KatalogSamochodow.cpp" />
+		<Unit filename="KatalogSamochodow.h" />
+		<Unit filename="ListaRezerwacji.cpp" />
+		<Unit filename="ListaRezerwacji.h" />
+		<Unit filename="OcenaStanu.cpp" />
+		<Unit filename="OcenaStanu.h" />
+		<Unit filename="Pracownik.cpp" />
+		<Unit filename="Pracownik.h" />
+		<Unit filename="Protocol.cpp" />
+		<Unit filename="Protocol.h" />
+		<Unit filename="Rezerwacja.cpp" />
+		<Unit filename="Rezerwacja.h" />
+		<Unit filename="Samochod.cpp" />
+		<Unit filename="Samochod.h" />
+		<Unit filename="TypEkspoloatacji.h" />
+		<Unit filename="Uzytkownicy.cpp" />
+		<Unit filename="Uzytkownicy.h" />
+		<Unit filename="Uzytkownik.cpp" />
+		<Unit filename="Uzytkownik.h" />
+		<Unit filename="WpisWKalendarzu.cpp" />
+		<Unit filename="WpisWKalendarzu.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
