@@ -3,14 +3,14 @@
 #include <cassert>
 #include <string>
 
-#include "Administrator.h"
-#include "Pracownik.h"
-#include "Kalendarz.h"
-#include "WpisWKalendarzu.h"
-#include "InterfaceProvider.h"
-#include "KatalogSamochodow.h"
-#include "ListaRezerwacji.h"
-#include "Uzytkownicy.h"
+#include "src/Administrator.h"
+#include "src/Pracownik.h"
+#include "src/Kalendarz.h"
+#include "src/WpisWKalendarzu.h"
+#include "src/InterfaceProvider.h"
+#include "src/KatalogSamochodow.h"
+#include "src/ListaRezerwacji.h"
+#include "src/Uzytkownicy.h"
 
 
 using namespace std;
