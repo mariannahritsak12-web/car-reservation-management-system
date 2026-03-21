@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cassert>
-#include "Samochod.h"
+#include "src/Samochod.h"
 
 using namespace std;
 
