@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cassert>
-#include "Samoshod"
-#include "KatalogSamochodow.h"
+#include "src/Samoshod"
+#include "src/KatalogSamochodow.h"
 
 using namespace std;
 
