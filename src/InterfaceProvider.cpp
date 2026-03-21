@@ -10,6 +10,7 @@
 #include "Samochod.h"
 #include "Uzytkownicy.h"
 #include "TypEkspoloatacji.h"
+
 #include <vector>
 #include <string>
 #include <iostream>
@@ -229,6 +230,7 @@ void ConsoleInterfaceProvider::run() {
         }
     }
 
+    // PODMENU DO ZARZADZANIA FLOTA
    void ConsoleInterfaceProvider::submenuZarzadzajFlota() {
         int wybor = -1;
 
@@ -238,9 +240,7 @@ void ConsoleInterfaceProvider::run() {
             cout << "2. Wyswietl flote" << endl;
             cout << "3. Edytuj dane samochodu" << endl;
             cout << "4. Usun samochod" << endl;
-            cout << "5. Zmien status samochodu" << endl;
-            cout << "0. Powrot" << endl;
-            cout << "7. Oznacz zadanie jako zrealizowane" << endl;
+            cout << "5. Oznacz status samochodu jako w serwisie" << endl;
             cout << "0. Powrot" << endl;
             cout << "Wybierz opcje: ";
 
@@ -252,27 +252,78 @@ void ConsoleInterfaceProvider::run() {
             }
 
             switch(wybor) {
-            case 1:
-                int idSamochodu = pobierzLiczbe("Wpisz ID samchodu: "); // Wygenerowaæ ID
+            case 1: {
+                int idSamochodu = pobierzLiczbe("Wpisz ID samchodu: "); // Wygenerowac ID
                 std::string marka = pobierzTekst("Wpisz marke samochodu: ");
-                //std:: string model = po
+                std:: string model = pobierzTekst("Wpisz model samochodu: ");
+                int rok = pobierzLiczbe("Wpisz rok produkcji samochodu: ");
+                int miejsca = pobierzLiczbe("Wpisz liczbe miejsc: ");
 
-                //Samochod* s1 = new Samochod(idSamochodu, marka, model, rok, miejsca, status, przebieg);
+                Samochod* s1 = new Samochod(idSamochodu, marka, model, rok, miejsca);
+
+                administrator.dodajSamochod(const_cast<KatalogSamochodow&>(katalog), s1);
+
+                break;
+            }
+            case 2:
+                administrator.przegladajSamochody(katalog);
+                break;
+            case 3: {
+                std::string marka = pobierzTekst("Zmien marke samochodu: ");
+                std::string model = pobierzTekst("Zmien model samochodu: ");
+                int rok = pobierzLiczbe("Zmien rok produkcji: ");
+                int miejsca = pobierzLiczbe("Zmien liczbe miejsc: ");
+
+                administrator.edytujSamochod(const_cast<KatalogSamochodow&>(katalog), marka, model, rok, miejsca);
+                break;
+            }
+            case 4: {
+                int id = pobierzLiczbe("Podaj ID samochodu do usuniecia: ");
+
+                administrator.usunSamochod(const_cast<KatalogSamochodow&>(katalog), id);
+                break;
+            }
+            case 5: {
+                int id = pobierzLiczbe("Jaki samochod chcesz oznaczyc(ID): ");
+
+                administrator.zmienStatusSamochodu(const_cast<KatalogSamochodow&>(katalog), id, "w serwisie");
+                break;
+            }
+            case 6:
+                cout << "Powrot..." << endl;
+                break;
+            default:
+                cout << "Zla opcja." << endl;
             }
         }
    }
 
+   // PODMENU DO ZARZADZANIA DOKUMENTACJA
     void ConsoleInterfaceProvider::submenuZarzadzajDokumentacja() {
-        cout << "===Zarzadzanie dokumentacja===" << endl;
-        cout << "1. Dodaj dokumentacje do samochodu" << endl;
-        cout << "2. Wyswietl wszystkie dokumenty" << endl;
-        cout << "3. Edytuj dokument" << endl;
-        cout << "4. Usun dokumentacje" << endl;
-        cout << "5. Wystaw protokol" << endl;
-        cout << "0. Powrot" << endl;
-        cout << "Wybierz opcje: ";
+        int wybor = -1;
+
+        while (wybor != 0) {
+            cout << "===Zarzadzanie dokumentacja===" << endl;
+            cout << "1. Dodaj dokumentacje do samochodu" << endl;
+            cout << "2. Wyswietl wszystkie dokumenty" << endl;
+            cout << "3. Edytuj dokument" << endl;
+            cout << "4. Usun dokumentacje" << endl;
+            cout << "5. Wystaw protokol" << endl;
+            cout << "0. Powrot" << endl;
+            cout << "Wybierz opcje: ";
+
+            if (!(cin >> wybor)) {
+                cout << "Nieprawidlowe dane. Sprobuj ponownie." << endl;
+                cin.clear();
+                cin.ignore(1000, '\n');
+                continue;
+            }
+
+
+        }
     }
 
+    // PODMENU DO ZARZADZANIA REZERWACJE
     void ConsoleInterfaceProvider::submenuZarzadzajRezerwacjami() {
         cout << "===Zarzadzanie Rezerwacjami===" << endl;
         cout << "1. Usun rezerwacje z archiwum" << endl;
@@ -282,6 +333,7 @@ void ConsoleInterfaceProvider::run() {
         cout << "Wybierz opcje: ";
     }
 
+    // PODMENU DO ZARZADZANIA UZYTKOWNICY
     void ConsoleInterfaceProvider::submenuZarzadzajUzytkownikami() {
         cout << "===Zarzadzanie Uzytkownikami===" << endl;
         cout << "1. Dodaj nowego uzytkownika" << endl;

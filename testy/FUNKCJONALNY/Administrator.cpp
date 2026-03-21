@@ -16,19 +16,13 @@ using namespace std;
 Administrator::Administrator(int id, const string& imie, const string& nazwisko, const string& login, const string& haslo, const string& stanowisko) :
     Uzytkownik(id, imie, nazwisko, login, haslo), stanowisko(stanowisko) {}
 
+
     void Administrator::dodajSamochod(KatalogSamochodow& katalog, Samochod* nowySamochod) {
         katalog.dodajSam(nowySamochod);
-
-        cout << "Dodano nowy samochod." << endl;
     }
     void Administrator::usunSamochod(KatalogSamochodow& katalog, int idSamochodu) {
-        if (katalog.usunSam(idSamochodu)) {
-            cout << "Samochod zostal usuniety." << endl;
-        } else {
-            cout << "Nie znaleziono samochodu o podanym ID." << endl;
-        }
+        katalog.usunSam(idSamochodu);
     }
-
     void Administrator::zmienStatusSamochodu(KatalogSamochodow* katalog, int idSamochodu, const string& nowyStatus) {
         if (katalog) {
             katalog->zmienStatusSamochodu(idSamochodu, nowyStatus);
@@ -36,11 +30,6 @@ Administrator::Administrator(int id, const string& imie, const string& nazwisko,
     }
     void Administrator::przegladajSamochody(KatalogSamochodow& katalog) {
         auto flota = katalog.pobierzWszystkieSam();
-
-        if (flota.empty()) {
-            cout << "Brak samochodow w katalogu." << endl;
-            return;
-        }
 
         cout << "KATALOG SAMOCHODOW" << endl;
         for (auto s : flota) {
@@ -55,11 +44,6 @@ Administrator::Administrator(int id, const string& imie, const string& nazwisko,
     }
     void Administrator::przegladajRezerwacje(ListaRezerwacji& lista) {
         auto rezerwacje = lista.pobierzWszystkieRez();
-
-        if (rezerwacje.empty()) {
-            cout << "Brak rezerwacji." << endl;
-            return;
-        }
 
         cout << "LISTA REZERWACJI" << endl;
         for (auto r : rezerwacje) {
@@ -164,45 +148,30 @@ Administrator::Administrator(int id, const string& imie, const string& nazwisko,
 
 
     void Administrator::dodajDokument(Dokumentacja& dok, Dokument* d) {
-
-    }
-
-    void Administrator::przegladajDokumenty(Dokumentacja& dok) {
         auto dokumenty = dok.pobierzWszyskieDok();
-
-        if (dokumenty.empty()) {
-            cout << "Brak dokumentow." << endl;
-            return;
-        }
 
         cout << "DOKUMENTACJA" << endl;
         for (auto d : dokumenty) {
             d->wypiszSzczegoly();
         }
     }
+
+    void Administrator::przegladajDokumenty(Dokumentacja& dok) {
+        dok.pobierzWszyskieDok();
+    }
     void Administrator::edytujDokument(Dokumentacja& dok, int idDokumentu, const string& nowyTytul, const string& nowyOpis) {
         //
     }
     void Administrator::usunDokument(Dokumentacja& dok, int idDokumentu) {
-        if (dok.usunDok(idDokumentu)) {
-            cout << "Dokument zostal usuniety." << endl;
-        } else {
-            cout << "Nie znaleziono dokumentu" << endl;
-        }
+        dok.usunDok(idDokumentu);
     }
 
     void Administrator::dodajUzytkownika(Uzytkownicy& pracownicy, Uzytkownik* u) {
-        if (pracownicy.dodajUzyt(u)) {
-            cout << "Uzytkownik zostal dodany." << endl;
-        }
+        pracownicy.dodajUzyt(u);
     }
 
     void Administrator::usunUzytkownika(Uzytkownicy& pracownicy, int idUzytkownika) {
-        if (pracownicy.usunUzyt(idUzytkownika)) {
-            cout << "Uzytkownik zostal usuniety." << endl;
-        } else {
-        cout << "Blad usuwania uzytkownika." << endl;
-        }
+        pracownicy.usunUzyt(idUzytkownika);
     }
     void Administrator::przegladajUzytkownikow(Uzytkownicy& pracownicy) {
         //
