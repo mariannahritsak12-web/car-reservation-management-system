@@ -16,6 +16,7 @@ using namespace std;
 Administrator::Administrator(int id, const string& imie, const string& nazwisko, const string& login, const string& haslo, const string& stanowisko) :
     Uzytkownik(id, imie, nazwisko, login, haslo), stanowisko(stanowisko) {}
 
+    // LOGIKA ZARZADZANIA SAMOCHODAMI
     void Administrator::dodajSamochod(KatalogSamochodow& katalog, Samochod* nowySamochod) {
         katalog.dodajSam(nowySamochod);
 
@@ -50,6 +51,8 @@ Administrator::Administrator(int id, const string& imie, const string& nazwisko,
     void Administrator::edytujSamochod(KatalogSamochodow& katalog, const string& nowaMarka, const string& nowyModel, int zmienRok, int zmienMiejsca) {
         //
     }
+
+    // LOGIKA ZARZADZANIA REZERWACJAMI
     void Administrator::usunRezerwacje(ListaRezerwacji& lista, int idRezerwacji) {
         lista.usunRez(idRezerwacji);
     }
@@ -162,7 +165,7 @@ Administrator::Administrator(int id, const string& imie, const string& nazwisko,
         }
     }
 
-
+    // LOGIKA ZARZADZANIA DOKUMENTACJA
     void Administrator::dodajDokument(Dokumentacja& dok, Dokument* d) {
 
     }
@@ -191,6 +194,7 @@ Administrator::Administrator(int id, const string& imie, const string& nazwisko,
         }
     }
 
+    // LOGIKA ZARZADZANIA UZYTKOWNIKAMI
     void Administrator::dodajUzytkownika(Uzytkownicy& pracownicy, Uzytkownik* u) {
         if (pracownicy.dodajUzyt(u)) {
             cout << "Uzytkownik zostal dodany." << endl;
@@ -210,6 +214,8 @@ Administrator::Administrator(int id, const string& imie, const string& nazwisko,
     void Administrator::edytujUzytkownika(Uzytkownicy& pracownicy, const string& zmienImie, const string& zmienNazwisko) {
         //
     }
+
+    // ZARZADZANIE ARCHIWUM REZERWACJI
 /*
     void Administrator::zarchiwizujRezerwacje(ListaRezerwacji& lista, HistoriaUzycia& historia, int idRezerwacji) {
         Rezerwacja* r = lista.pobierzDlaUzytkownika(idRezerwacji);
