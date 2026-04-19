@@ -9,5 +9,5 @@
 *.a
 *.dll
 
-bin/
-obj/
+/bin/
+/obj/
